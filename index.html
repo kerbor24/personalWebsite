@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>KERBOR-Developer Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Include padding and border in total width and height */
+        }
+        body {
+            background-color: rgb(1, 0, 72);
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px; /* Add some padding for better touch target */
+            background-color: rgb(1, 16, 68);
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Allow items to wrap */
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 15px;   
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        } 
+        nav ul li a:hover {
+            color: white;
+            font-size: 1.01rem;
+        }
+        .left {
+            font-size: 1.5rem;
+        }
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            margin: 80px 20px; /* Add margin for smaller screens */
+        }
+        .firstSection > div {
+            width: 30%;
+            min-width: 250px; /* Minimum width for responsiveness */
+            text-align: center; /* Center text for better alignment */
+        }
+        .leftSection {
+            font-size: 2.5rem; /* Adjust font size */
+        }
+        .rightSection img {
+            width: 80%;
+            max-width: 400px; /* Max width for larger screens */
+        }
+        .purple {
+            color: rgb(48, 8, 86); 
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .firstSection {
+                flex-direction: column; /* Stack sections vertically */
+                align-items: center; /* Center content */
+            }
+            .leftSection {
+                font-size: 2rem; /* Smaller font size on mobile */
+            }
+            .rightSection img {
+                width: 90%; /* Adjust image size for smaller screens */
+            }
+        }
+        
+        @media (max-width: 480px) {
+            nav {
+                flex-direction: column; /* Stack navigation items */
+                align-items: center; /* Center navigation items */
+            }
+            nav ul {
+                flex-direction: column; /* Stack navigation items vertically */
+                margin-top: 10px; /* Add spacing between nav and content */
+            }
+            nav ul li {
+                margin: 10px 0; /* Vertical spacing between items */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">KERBOR PORTFOLIO</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT ME</a></li>
+                    <li><a href="assignments.html">ASSIGNMENTS</a></li>
+                </ul>
+            </div>          
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Kerborlang Khyriem.</span>
+                <div>I am a B.Tech Student in NIT Meghalaya pursuing <div><i>Computer Science and Engineering.</i></div></div>
+            </div>
+            <div class="rightSection"> 
+                <img src="wb.png" alt="Web Development">
+            </div>    
+        </section>
+    </main>
+</body>
+</html>

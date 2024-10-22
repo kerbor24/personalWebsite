@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Contact Me - KERBOR Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: rgb(1, 0, 72);
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: rgb(1, 16, 68);
+            padding: 10px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        nav ul {
+            display: flex;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 15px;   
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        } 
+        main {
+            padding: 20px;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+        }
+        input, textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        textarea {
+            resize: vertical; /* Allow vertical resizing */
+        }
+        button {
+            padding: 10px;
+            background-color: rgb(1, 16, 68);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(48, 8, 86);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">KERBOR PORTFOLIO</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT ME</a></li>
+                    <li><a href="assignments.html">ASSIGNMENTS</a></li>
+                </ul>
+            </div>          
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="tel" placeholder="Your Phone Number" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <input type="text" placeholder="Your Address" required>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
